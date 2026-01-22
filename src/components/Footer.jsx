@@ -76,7 +76,8 @@ function Footer() {
 
           {/* Copyright */}
           <div className="footer-bottom">
-            <p>&copy; 2026 Kulkarni Housing is a Construction and Architectural firm. All rights reserved.</p>
+        <p>© 2026 Kulkarni Housing. All rights reserved.</p>
+
           </div>
         </div>
       </div>

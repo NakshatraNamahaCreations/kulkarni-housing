@@ -13,7 +13,10 @@ import './App.css'
 
 function App() {
   const [showWelcomeForm, setShowWelcomeForm] = useState(false)
-
+  useEffect(() => {
+    // Show form when website loads
+    setShowWelcomeForm(true)
+  }, [])
   // 🔥 GLOBAL scroll logic
   useEffect(() => {
     const handleScroll = () => {

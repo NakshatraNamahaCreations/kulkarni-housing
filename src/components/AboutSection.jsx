@@ -59,7 +59,7 @@ function AboutSection() {
               We preserve the natural environment and design homes that harmonize with the scenic beauty of the surrounding landscape. We would never build or design anything that we wouldn't want to live in. Every customer should be proud of their home, and their lasting relationship with us will always remain our bottom line.
             </p>
             <div className="about-read-more-wrapper">
-              <a href="#about" className="about-read-more-btn">
+              <a href="/about" className="about-read-more-btn">
                 <span>Read More</span>
                 <em></em>
               </a>

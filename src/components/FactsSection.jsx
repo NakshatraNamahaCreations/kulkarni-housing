@@ -3,18 +3,12 @@ import bgImage from '../assets/home_images/bg-2.jpg'
 import './FactsSection.css'
 
 const facts = [
-  // {
-  //   number: +451,
-  //   label: 'Happy Clients'
-  // },
+
   {
     number: +360,
     label: 'Finished Projects'
   },
-  // {
-  //   number: +299,
-  //   label: 'Working Days'
-  // }
+
 ]
 
 function FactsSection() {
@@ -86,7 +80,7 @@ function FactsSection() {
           </div>
 
           <div className="col-lg-6 col-md-12">
-            <div className="row fs-some-facts-counter">
+            <div className="fs-some-facts-counter">
               {facts.map((fact, index) => (
                 <div key={index} className="col-md-4 col-sm-4">
                   <div className="fs-icon-box-wraper p-a10 text-white m-b30">
