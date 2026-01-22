@@ -13,7 +13,7 @@ function Footer() {
             <div className="footer-column footer-logo-column">
               <div className="footer-logo">
                 <Link to="/">
-                  <img src="/Group 118 (1).png" alt="Kulkarni Housing Construction and Architectural firm Logo" className="footer-logo-image" />
+                  <img src="/Group 118 (1).png" alt="Kulkarni Housing is a Construction and Architectural firm Logo" className="footer-logo-image" />
                 </Link>
               </div>
               <p className="footer-description">
@@ -27,10 +27,9 @@ function Footer() {
               <ul className="footer-links">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
 
@@ -66,25 +65,18 @@ function Footer() {
                 <a href="#" aria-label="Facebook" className="social-icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" aria-label="Twitter" className="social-icon">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#" aria-label="LinkedIn" className="social-icon">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
+
                 <a href="#" aria-label="Instagram" className="social-icon">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#" aria-label="YouTube" className="social-icon">
-                  <i className="fab fa-youtube"></i>
-                </a>
+     
               </div>
             </div>
           </div>
 
           {/* Copyright */}
           <div className="footer-bottom">
-            <p>&copy; 2025 Kulkarni Housing Construction and Architectural firm. All rights reserved.</p>
+            <p>&copy; 2026 Kulkarni Housing is a Construction and Architectural firm. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -1,31 +1,39 @@
-import { useState, useEffect } from 'react'
-import './ScrollToTop.css'
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import "./ScrollToTop.css";
 
 function ScrollToTop() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+  const { pathname } = useLocation();
 
+  // Show / hide scroll-to-top button
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
-        setIsVisible(true)
+        setIsVisible(true);
       } else {
-        setIsVisible(false)
+        setIsVisible(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', toggleVisibility)
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility)
-    }
-  }, [])
+  // 🔥 Scroll to top on route change (nav click)
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
@@ -39,9 +47,7 @@ function ScrollToTop() {
         </button>
       )}
     </>
-  )
+  );
 }
 
-export default ScrollToTop
-
-
+export default ScrollToTop;

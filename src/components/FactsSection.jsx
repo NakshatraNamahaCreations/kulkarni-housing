@@ -3,18 +3,18 @@ import bgImage from '../assets/home_images/bg-2.jpg'
 import './FactsSection.css'
 
 const facts = [
-  {
-    number: +451,
-    label: 'Happy Clients'
-  },
+  // {
+  //   number: +451,
+  //   label: 'Happy Clients'
+  // },
   {
     number: +360,
     label: 'Finished Projects'
   },
-  {
-    number: +299,
-    label: 'Working Days'
-  }
+  // {
+  //   number: +299,
+  //   label: 'Working Days'
+  // }
 ]
 
 function FactsSection() {

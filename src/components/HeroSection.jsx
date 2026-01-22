@@ -61,7 +61,7 @@ function HeroSection() {
       <div className="hs-content">
         <span className="hs-subtitle">AN EXTENSIVE RANGE OF SERVICES</span>
         <h1 className="hs-title">BUILDING DREAM HOMES WITH EXCELLENCE</h1>
-        <p className="hs-text">Kulkarni Housing Construction and Architectural firm is a highly trusted construction and architecture firm specializing in all kinds of themes.</p>
+        <p className="hs-text">Kulkarni Housing is a Construction and Architectural firm is a highly trusted construction and architecture firm specializing in all kinds of themes.</p>
         <div className="hs-btns">
           <a href="#contact" className="hs-btn">
             <span className="hs-btn__bar"></span>

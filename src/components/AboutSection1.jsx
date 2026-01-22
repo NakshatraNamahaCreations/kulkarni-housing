@@ -12,7 +12,7 @@ import latest7 from '../assets/latest/image3.png'
 
 import './AboutSection.css'
 
-function AboutSection() {
+function AboutSection1() {
   const sliderRef = useRef(null)
 
   const carouselImages = [
@@ -24,7 +24,6 @@ function AboutSection() {
       { src: latest6, alt: 'Project 6' },
        { src: latest7, alt: 'Project 7' },
   ]
-
 
   const settings = {
     dots: true,
@@ -58,13 +57,13 @@ function AboutSection() {
             <p className="about-description">
               We preserve the natural environment and design homes that harmonize with the scenic beauty of the surrounding landscape. We would never build or design anything that we wouldn't want to live in. Every customer should be proud of their home, and their lasting relationship with us will always remain our bottom line.
             </p>
-            <div className="about-read-more-wrapper">
+            {/* <div className="about-read-more-wrapper">
               <a href="#about" className="about-read-more-btn">
                 <span>Read More</span>
                 <em></em>
               </a>
               <div className="about-read-more-line"></div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Side - Image Carousel */}
@@ -96,4 +95,4 @@ function AboutSection() {
   )
 }
 
-export default AboutSection
+export default AboutSection1

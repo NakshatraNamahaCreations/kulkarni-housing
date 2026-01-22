@@ -30,7 +30,7 @@ function BlogSection() {
   return (
     <section className="blog-section">
       <div className="blog-background">
-        <div className="container">
+        <div className="container1">
           <div className="blog-header">
             <h2 className="blog-title text-uppercase">Latest Blog</h2>
             <div className="wt-separator-outer">

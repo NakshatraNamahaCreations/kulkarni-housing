@@ -1,9 +1,14 @@
 .header-main {
   background-color: #ffffff;
-  position: relative;
+  position: fixed;     /* 🔥 FIXED */
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 12px 0;
-  z-index: 31;
+  z-index: 1000;
+  
 }
+
 
 .position-relative {
   position: relative !important;

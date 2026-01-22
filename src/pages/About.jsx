@@ -7,6 +7,7 @@ import OurExpertsSection from '../components/OurExpertsSection'
 import Footer from '../components/Footer'
 import './About.css'
 import OurTeam from '../components/OurTeam'
+import AboutSection1 from '../components/AboutSection1'
 
 function About() {
   return (
@@ -14,7 +15,7 @@ function About() {
       <HeaderTop />
       <HeaderMain />
       <AboutBanner />
-      <AboutSection />
+      <AboutSection1/>
       <OurServicesSection />
       {/* <OurExpertsSection /> */}
       <OurTeam/>

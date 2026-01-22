@@ -7,19 +7,33 @@ import Services from './pages/Services'
 import Projects from './pages/Projects'
 import WelcomeForm from './components/WelcomeForm'
 import ScrollToTop from './components/ScrollToTop'
+import HeaderTop from './components/HeaderTop'
+import HeaderMain from './components/HeaderMain'
 import './App.css'
 
 function App() {
   const [showWelcomeForm, setShowWelcomeForm] = useState(false)
 
+  // 🔥 GLOBAL scroll logic
   useEffect(() => {
-    // Show form when website loads
-    setShowWelcomeForm(true)
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        document.body.classList.add('header-stuck')
+      } else {
+        document.body.classList.remove('header-stuck')
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <div className="App">
       <Router>
+
+        <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -28,8 +42,11 @@ function App() {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </Router>
-      <WelcomeForm isOpen={showWelcomeForm} onClose={() => setShowWelcomeForm(false)} />
-      <ScrollToTop />
+
+      <WelcomeForm
+        isOpen={showWelcomeForm}
+        onClose={() => setShowWelcomeForm(false)}
+      />
     </div>
   )
 }

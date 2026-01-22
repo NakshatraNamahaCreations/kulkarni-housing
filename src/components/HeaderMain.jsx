@@ -30,7 +30,7 @@ function HeaderMain() {
             <div className="header-logo-wrapper">
               <div className="header-logo">
                 <Link to="/" onClick={closeMobileMenu}>
-                  <img src="/Group 118 (1).png" alt="Kulkarni Housing Construction and Architectural firm Logo" className="logo-image" />
+                  <img src="/Group 118 (1).png" alt="Kulkarni Housing is a Construction and Architectural firm Logo" className="logo-image" />
                 </Link>
               </div>
             </div>

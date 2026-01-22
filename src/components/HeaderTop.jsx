@@ -2,7 +2,8 @@ import './HeaderTop.css'
 
 function HeaderTop() {
   return (
-    <div className="header-top">
+  <div className="header-top" id="header-top">
+
       <div className="header-shape"></div>
       <div className="container">
         <div className="header-top-content">
@@ -16,12 +17,8 @@ function HeaderTop() {
             <a href="#" aria-label="Facebook">
               <i className="fab fa-facebook"></i>
             </a>
-            <a href="#" aria-label="Twitter">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <i className="fab fa-linkedin"></i>
-            </a>
+         
+    
             <a href="#" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
