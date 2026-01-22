@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.welcome-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  animation: slideUp 0.4s ease-out;
+  pointer-events: all;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.welcome-form-card {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-form-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.welcome-form-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.welcome-form-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 2;
+}
+
+.welcome-form-content {
+  position: relative;
+  z-index: 3;
+  padding: 30px 25px;
+  overflow-y: auto;
+}
+
+.welcome-form-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.welcome-form-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.welcome-form-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.welcome-form-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.welcome-form-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+  font-size: 36px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 4;
+  line-height: 1;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-form-close:hover {
+  background: #ffffff;
+  transform: rotate(90deg);
+}
+
+.welcome-form-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.welcome-form-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-form-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.welcome-form-group {
+  width: 100%;
+}
+
+.welcome-form-input {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.98);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-form-input:focus {
+  outline: none;
+  border-color: #b0b0b0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-form-input::placeholder {
+  color: #999;
+}
+
+.welcome-form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 12px;
+  padding-right: 45px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.welcome-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.welcome-form-submit {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: #FFD700;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+}
+
+.welcome-form-submit:hover {
+  background-color: #ffed4e;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+.welcome-form-submit:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .welcome-form-overlay {
+    padding: 15px;
+  }
+
+  .welcome-form-container {
+    max-width: 320px;
+  }
+
+  .welcome-form-content {
+    padding: 25px 20px;
+  }
+
+  .welcome-form-title {
+    font-size: 20px;
+  }
+
+  .welcome-form-subtitle {
+    font-size: 13px;
+  }
+
+  .welcome-form-input {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .welcome-form-submit {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-form-overlay {
+    padding: 10px;
+  }
+
+  .welcome-form-container {
+    max-width: 280px;
+  }
+
+  .welcome-form-content {
+    padding: 20px 18px;
+  }
+
+  .welcome-form-title {
+    font-size: 18px;
+  }
+
+  .welcome-form-close {
+    top: 12px;
+    right: 12px;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+  }
+
+  .welcome-form {
+    gap: 12px;
+  }
+}
+
