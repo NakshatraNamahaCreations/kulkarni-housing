@@ -136,12 +136,12 @@ function LatestProjectsSection() {
                   </div>
                   <div className="text-white font-weight-300 p-a40">
                     <h2>
-                      <a href="#projects" className="text-white font-20 letter-spacing-4 text-uppercase">
+                      <a href="/projects" className="text-white font-20 letter-spacing-4 text-uppercase">
                         {project.title}
                       </a>
                     </h2>
                     <p>{project.description}</p>
-                    <a href="#projects" className="v-button letter-spacing-4 font-12 text-uppercase p-l20">
+                    <a href="/projects" className="v-button letter-spacing-4 font-12 text-uppercase p-l20">
                       Read More
                     </a>
                   </div>

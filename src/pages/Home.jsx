@@ -33,7 +33,7 @@ function Home() {
       {/* <SuccessSection /> */}
       <FactsSection />
       {/* <FeaturesSection /> */}
-      <BlogSection />
+      {/* <BlogSection /> */}
       {/* <ContactSection /> */}
       <ContactForm />
       <Footer />

@@ -42,7 +42,7 @@ function ContactInfo() {
             <h3 className="contact-info-title">Email Address</h3>
             <p className="contact-info-text">
               <a href="mailto:roopalimayur9@gmail.com" className="contact-info-link">
-                kulkarnihousing@gmail.com
+                mayurgk@gmail.com
               </a>
            
              

@@ -193,9 +193,9 @@ function ProjectsGridSection() {
                   </a>
                 </h2>
                 <p>{project.description}</p>
-                <a href="#projects" className="v-button letter-spacing-4 font-12 text-uppercase p-l20">
+                {/* <a href="#projects" className="v-button letter-spacing-4 font-12 text-uppercase p-l20">
                   Read More
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

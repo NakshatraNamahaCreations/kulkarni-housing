@@ -5,7 +5,7 @@ import './FactsSection.css'
 const facts = [
 
   {
-    number: +360,
+    number: 360,
     label: 'Finished Projects'
   },
 
@@ -86,7 +86,7 @@ function FactsSection() {
                   <div className="fs-icon-box-wraper p-a10 text-white m-b30">
                     <div className="fs-icon-content text-center">
                       <div className="fs-font-40 font-weight-600 m-b5">
-                        <span className="fs-counter">+{counters[index]}</span>
+                        <span className="fs-counter">{counters[index]} +</span>
                       </div>
                       <div className="fs-separator-outer m-b20">
                         <div className="fs-separator bg-white"></div>
