@@ -48,6 +48,10 @@ function Footer() {
                   <span>mayurgk@gmail.com</span>
                 </p>
                 <p>
+                  <i className="fas fa-envelope"></i>
+                  <span>kulkarnihousing@gmail.com</span>
+                </p>
+                <p>
                   <i className="fas fa-phone"></i>
                   <span>+91 9845057415</span>
                 </p>
