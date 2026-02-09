@@ -45,7 +45,7 @@ function Footer() {
                 </p>
                 <p>
                   <i className="fas fa-envelope"></i>
-                  <span>roopalimayur9@gmail.com</span>
+                  <span>mayurgk@gmail.com</span>
                 </p>
                 <p>
                   <i className="fas fa-phone"></i>

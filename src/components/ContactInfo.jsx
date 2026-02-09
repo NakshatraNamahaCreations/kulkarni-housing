@@ -41,7 +41,7 @@ function ContactInfo() {
             </div>
             <h3 className="contact-info-title">Email Address</h3>
             <p className="contact-info-text">
-              <a href="mailto:roopalimayur9@gmail.com" className="contact-info-link">
+              <a href="mailto:mayurgk@gmail.com" className="contact-info-link">
                 mayurgk@gmail.com
               </a>
            
