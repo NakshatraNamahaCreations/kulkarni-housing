@@ -1,0 +1,131 @@
+.category-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.category-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-section .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.category-section .col-lg-3 {
+  width: 100%;
+}
+
+.cate-block--style {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cate-block__img {
+  position: relative;
+  overflow: visible;
+  margin-bottom: 45px;
+  width: 100%;
+  height: 300px;
+}
+
+.cate-block__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.cate-block--style:hover .cate-block__img img {
+  transform: scale(1.05);
+}
+
+.cate-block__icon {
+  position: absolute;
+  min-width: 90px;
+  min-height: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -45px;
+  right: 10px;
+  background-color: #1a1a3e;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.cate-block--style:hover .cate-block__icon {
+  background-color: #ff6b35;
+}
+
+.cate-block__icon > img {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  z-index: 1;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.cate-block--style:hover .cate-block__icon > img {
+  filter: brightness(0) invert(1);
+}
+
+.cate-block__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.cate-block__title a {
+  color: #1a1a1a;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.cate-block__title a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: #ff6b35;
+  transition: width 0.3s ease;
+}
+
+.cate-block--style:hover .cate-block__title a {
+  color: #ff6b35;
+}
+
+.cate-block--style:hover .cate-block__title a::after {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .category-section .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .category-section {
+    padding: 60px 20px;
+  }
+
+  .category-section .row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+

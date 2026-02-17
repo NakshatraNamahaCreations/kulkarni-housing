@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.latest-projects-section {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  position: relative;
+  /* top: 100px; */
+}
+
+.latest-projects-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.latest-projects-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 50px;
+}
+
+.latest-projects-section .col-xl-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  padding: 0 15px;
+}
+
+.latest-projects-section .col-lg-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.latest-projects-section .col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.font-36 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+}
+
+.latest-projects-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color:black;
+  line-height: 1.6;
+  margin: 20px 0 0 0;
+  max-width: 500px;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wt-separator-outer {
+  width: 80px;
+  margin: 0;
+}
+
+.wt-separator {
+  height: 3px;
+  width: 100%;
+}
+
+.bg-black {
+  background-color: #1a1a1a;
+}
+
+.latest-projects-carousel-filter {
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.latest-projects-carousel {
+  position: relative;
+}
+
+.project-slide {
+  padding: 0 15px;
+}
+
+.project-card {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* .project-card:hover {
+  border-color: #ebcd1e;
+  box-shadow: 0 0 20px rgba(235, 205, 30, 0.3);
+} */
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.project-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.project-card:hover .project-image::after {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.p-a40 {
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project-card:hover .p-a40 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card h2 {
+  margin: 0 0 15px 0;
+}
+
+.project-card h2 a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card h2 a:hover {
+  color: #ebcd1e;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 4px;
+}
+
+.project-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.v-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.v-button:hover {
+  color: #ebcd1e;
+}
+
+.p-l20 {
+  padding-left: 20px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+/* Line animation on hover */
+.line-amiation {
+  position: relative;
+}
+
+.line-amiation:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  
+  left: 20px;
+  top: 0;
+  width: 3px;
+  height: 0px;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+  opacity: 0;
+  z-index: 10;
+}
+
+.line-amiation:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 20px;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+  opacity: 0;
+  z-index: 10;
+}
+
+.line-amiation:hover:before {
+  height: 100%;
+  top: 0;
+  opacity: 1;
+}
+
+.line-amiation:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* Slick carousel customizations */
+.latest-projects-carousel-filter .slick-slider {
+  position: relative;
+}
+
+.latest-projects-carousel-filter .slick-list {
+  margin: 0 -10px;
+}
+
+.latest-projects-carousel-filter .slick-slide > div {
+  padding: 0 10px;
+}
+
+/* Hide default slick arrows */
+.latest-projects-carousel-filter .slick-prev,
+.latest-projects-carousel-filter .slick-next {
+  display: none !important;
+}
+
+/* Custom navigation buttons below carousel */
+.carousel-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+.carousel-arrow {
+  width: 50px;
+  height: 50px;
+  background: #333333;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.carousel-arrow:hover {
+  background: #333333;
+  color: #ffffff;
+}
+
+.carousel-arrow:focus {
+  outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  /* 3 cards on medium screens */
+}
+
+@media (max-width: 992px) {
+  .latest-projects-carousel-filter {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .latest-projects-section .col-xl-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .font-36 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .latest-projects-section {
+    padding: 60px 30px;
+  }
+
+  .latest-projects-carousel-filter {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .project-image {
+    height: 300px;
+  }
+
+  .p-a40 {
+    padding: 30px 20px;
+  }
+
+  .project-card h2 a {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .latest-projects-section {
+    padding: 40px 15px;
+  }
+
+  .latest-projects-section .container {
+    padding: 0 10px;
+  }
+
+  .latest-projects-section .row {
+    margin-bottom: 30px;
+  }
+
+  .font-36 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .latest-projects-description {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .latest-projects-carousel-filter {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  .p-a40 {
+    padding: 20px 15px;
+  }
+
+  .project-card h2 a {
+    font-size: 16px;
+  }
+
+  .project-card p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .carousel-navigation {
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,20 @@
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .services-page {
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+
+
+
+
